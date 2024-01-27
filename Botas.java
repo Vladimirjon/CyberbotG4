@@ -1,7 +1,7 @@
 public class Botas {
     private boolean botas=true;
 
-    public boolean isBotas() {
+    public boolean isBotasequipped() {
         return botas;
     }
 
