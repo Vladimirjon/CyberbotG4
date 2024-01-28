@@ -1,4 +1,5 @@
-public class Exobot extends IABOT implements IEspanol,IIngles{
+public class Exobot extends IABOT implements IEspanol, IIngles {
+    private static int VAcontadorExbots = 0;
     private Botas pjbotas;
     private Reactor pjreactor;
     private Laser pjlaser;
@@ -6,6 +7,8 @@ public class Exobot extends IABOT implements IEspanol,IIngles{
     private Lanzafuegos pjlanzafuego;
     private Bazuca pjbazuca;
     private Exobot exobot;
+    private int VAnumero;
+    private String VAserie;
 
     public Exobot getExobot() {
         return exobot;
@@ -15,8 +18,10 @@ public class Exobot extends IABOT implements IEspanol,IIngles{
         this.exobot = exobot;
     }
 
-    public Exobot(boolean ispjBazucaequipped,boolean ispjLaserequipped,boolean ispjBotasequipped,boolean ispjReactorequipped,boolean ispjMetralletaeqquiped, boolean ispjLanzafuegoequipped){
-        this.exobot= new Exobot(ispjBazucaequipped, ispjLaserequipped, ispjBotasequipped, ispjReactorequipped, ispjMetralletaeqquiped, ispjLanzafuegoequipped);
+      public Exobot(boolean ispjBazucaequipped, boolean ispjLaserequipped, boolean ispjBotasequipped,
+            boolean ispjReactorequipped, boolean ispjMetralletaeqquiped, boolean ispjLanzafuegoequipped) {
+        VAcontadorExbots++;
+        this.VAnumero = VAcontadorExbots;
         this.pjbotas = new Botas(true);
         this.pjreactor = new Reactor(true);
         this.pjequiparlaser(false);
@@ -25,27 +30,37 @@ public class Exobot extends IABOT implements IEspanol,IIngles{
         this.pjequiparlanzafuegos(false);
     }
 
-    public void pjequiparmetralleta(boolean pjequipar){
+    public void pjequiparmetralleta(boolean pjequipar) {
         this.pjmetralleta = new Metralleta(pjequipar);
     }
-    
-    public void pjequiparlaser(boolean pjequipar){
+
+    public void pjequiparlaser(boolean pjequipar) {
         this.pjlaser = new Laser(pjequipar);
     }
 
-    public void pjequiparbazuca(boolean pjequipar){
+    public void pjequiparbazuca(boolean pjequipar) {
         this.pjbazuca = new Bazuca(pjequipar);
     }
 
-    public void pjequiparlanzafuegos(boolean pjequipar){
+    public void pjequiparlanzafuegos(boolean pjequipar) {
         this.pjlanzafuego = new Lanzafuegos(pjequipar);
     }
+
     @Override
     public String pjenseniarIngles() {
-        return "El "+this.getExobot()+"ha aprendido ingles.";
+        return "El " + this.getExobot() + "ha aprendido ingles.";
     }
+
     @Override
     public String pjensenaEspanol() {
-        return "El "+this.getExobot()+"ha aprendido español.";
+        return "El " + this.getExobot() + "ha aprendido español.";
+    }
+
+    public void vaAsignarSerie(String VAserie) {
+        this.VAserie = VAserie;
+    }
+
+    public void vaMostrarInformacion() {
+        System.out.println("Exobot " + VAnumero + ": Serie " + VAserie);
     }
 }
