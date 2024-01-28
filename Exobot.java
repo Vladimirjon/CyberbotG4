@@ -1,49 +1,86 @@
-public class Exobot extends IABOT implements IEspanol,IIngles{
-    private Botas pjbotas;
-    private Reactor pjreactor;
-    private Laser pjlaser;
-    private Metralleta pjmetralleta;
-    private Lanzafuegos pjlanzafuego;
-    private Bazuca pjbazuca;
-    private Exobot exobot;
+import java.util.Random;
 
-    public Exobot getExobot() {
-        return exobot;
+public class Exobot extends IABot implements IEspanol, IIngles {
+
+    
+    private boolean tjreactor;
+
+    public boolean getTjreactor() {
+        return tjreactor;
     }
 
-    public void setExobot(Exobot exobot) {
-        this.exobot = exobot;
+    public void setTjreactor(boolean tjreactor) {
+        this.tjreactor = tjreactor;
     }
 
-    public Exobot(boolean ispjBazucaequipped,boolean ispjLaserequipped,boolean ispjBotasequipped,boolean ispjReactorequipped,boolean ispjMetralletaeqquiped, boolean ispjLanzafuegoequipped){
-        this.exobot= new Exobot(ispjBazucaequipped, ispjLaserequipped, ispjBotasequipped, ispjReactorequipped, ispjMetralletaeqquiped, ispjLanzafuegoequipped);
-        this.pjbotas = new Botas(true);
-        this.pjreactor = new Reactor(true);
-        this.pjequiparlaser(false);
-        this.pjequiparbazuca(false);
-        this.pjequiparmetralleta(false);
-        this.pjequiparlanzafuegos(false);
+    private boolean tjbotas;
+    
+    public boolean isTjbotas() {
+        return tjbotas;
     }
 
-    public void pjequiparmetralleta(boolean pjequipar){
-        this.pjmetralleta = new Metralleta(pjequipar);
+    public void setTjbotas(boolean tjbotas) {
+        this.tjbotas = tjbotas;
     }
     
-    public void pjequiparlaser(boolean pjequipar){
-        this.pjlaser = new Laser(pjequipar);
+    private boolean pjequiparlaser;
+    
+    public boolean getPjequiparlaser() {
+        return pjequiparlaser;
     }
 
-    public void pjequiparbazuca(boolean pjequipar){
-        this.pjbazuca = new Bazuca(pjequipar);
+    public void setPjequiparlaser(boolean pjequiparlaser) {
+        this.pjequiparlaser = pjequiparlaser;
     }
 
-    public void pjequiparlanzafuegos(boolean pjequipar){
-        this.pjlanzafuego = new Lanzafuegos(pjequipar);
+    private boolean pjequiparmetralleta;
+    public boolean getPjequiparmetralleta() {
+        return pjequiparmetralleta;
     }
-    @Override
-    public String pjenseniarIngles() {
-        return "El "+this.getExobot()+"ha aprendido ingles.";
+
+    public void setPjequiparmetralleta(boolean pjequiparmetralleta) {
+        this.pjequiparmetralleta = pjequiparmetralleta;
     }
+
+
+    
+    private boolean pjequiparlanzafuego;
+
+    public boolean getPjequiparlanzafuego() {
+        return pjequiparlanzafuego;
+    }
+
+    public void setPjequiparlanzafuego(boolean pjequiparlanzafuego) {
+        this.pjequiparlanzafuego = pjequiparlanzafuego;
+    }
+
+    public boolean getPjequiparbazuca() {
+        return pjequiparbazuca;
+    }
+
+    public void setPjequiparbazuca(boolean pjequiparbazuca) {
+        this.pjequiparbazuca = pjequiparbazuca;
+    }
+
+    private boolean pjequiparbazuca;
+
+    public Exobot() {
+        this.tjbotas = true;
+        this.tjreactor = true;
+
+        Random random = new Random();
+        this.pjequiparlaser = random.nextBoolean();
+        this.pjequiparmetralleta = random.nextBoolean();
+        this.pjequiparlanzafuego = !pjequiparlaser;
+        this.pjequiparbazuca = !pjequiparmetralleta;
+
+    }
+
+
+
+  
+}
+
     @Override
     public String pjensenaEspanol() {
         return "El "+this.getExobot()+"ha aprendido español.";
