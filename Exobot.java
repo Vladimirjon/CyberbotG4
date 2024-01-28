@@ -1,18 +1,28 @@
 public class Exobot extends IABOT implements IEspanol,IIngles{
-    private Botas pjbotas;
-    private Reactor pjreactor;
-    private Laser pjlaser;
-    private Metralleta pjmetralleta;
-    private Lanzafuegos pjlanzafuego;
-    private Bazuca pjbazuca;
+    private Botas botas;
+    private Reactor reactor;
+    private Laser laser;
+    private Metralleta metralleta;
+    private Lanzafuegos lanzafuego;
+    private Bazuca bazuca;
+    private Exobot exobot;
+
+    public Exobot getExobot() {
+        return exobot;
+    }
+
+    public void setExobot(Exobot exobot) {
+        this.exobot = exobot;
+    }
 
     public Exobot(){
-        this.pjbotas = new Botas(true);
-        this.pjreactor = new Reactor(true);
-        this.pjequiparlaser(false);
-        this.pjequiparbazuca(false);
-        this.pjequiparmetralleta(false);
-        this.pjequiparlanzafuegos(false);
+        this.exobot= new Exobot();
+        this.botas = new Botas(true);
+        this.reactor = new Reactor(true);
+        this.equiparlaser(false);
+        this.equiparbazuca(false);
+        this.equiparmetralleta(false);
+        this.equiparlanzafuegos(false);
     }
 
     public void pjequiparmetralleta(boolean pjequipar){
@@ -30,5 +40,12 @@ public class Exobot extends IABOT implements IEspanol,IIngles{
     public void pjequiparlanzafuegos(boolean pjequipar){
         this.pjlanzafuego = new Lanzafuegos(pjequipar);
     }
-
+    @Override
+    public String pjenseniarIngles() {
+        return "El "+this.getExobot()+"ha aprendido ingles.";
+    }
+    @Override
+    public String pjensenaEspanol() {
+        return "El "+this.getExobot()+"ha aprendido español.";
+    }
 }
