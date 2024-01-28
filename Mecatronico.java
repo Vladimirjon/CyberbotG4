@@ -1,8 +1,8 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Mecatronico {
     private static int VAcontadorExobots = 0;
-    //Esta el constructor donde se crean todas las variables aleatoriamente
     public Exobot oExobot;
     public Lanzafuegos oLanzafuegos;
     public Metralleta oMetralleta;
@@ -22,7 +22,7 @@ public class Mecatronico {
         Exobot[] exobots = new Exobot[20];
 
         for (int i = 0; i < 20; i++) {
-            exobots[i] = new Exobot(false, false, false, false, false, false);
+            exobots[i] = new Exobot();
             String serieAleatoria = mecatronico.vaAsignarSerie();
             exobots[i].vaAsignarSerie(serieAleatoria);
         }

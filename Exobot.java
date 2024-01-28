@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class Exobot extends IABOT implements IEspanol, IIngles {
+    private static int VAcontadorExbots=0;
     private Exobot exobot;
     private int VAnumero;
     private String VAserie;
