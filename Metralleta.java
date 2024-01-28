@@ -1,6 +1,14 @@
 public class Metralleta implements IArma{
     private boolean pjmetralleta;
 
+    public boolean isPjmetralleta() {
+        return pjmetralleta;
+    }
+
+    public void setPjmetralleta(boolean pjmetralleta) {
+        this.pjmetralleta = pjmetralleta;
+    }
+
     public boolean ispjMetralletaeqquiped() {
         return pjmetralleta;
     }
@@ -11,8 +19,8 @@ public class Metralleta implements IArma{
         System.out.println("Metralleta (MK61 Vulcan) ");
     }
 
-    public Metralleta(boolean pjmetralleta){
-        this.pjmetralleta=pjmetralleta;
+    public Metralleta(Exobot oExobot){
+         this.pjmetralleta=oExobot.getPjequiparmetralleta();
     }
 
 }

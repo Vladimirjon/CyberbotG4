@@ -1,6 +1,14 @@
 public class Laser implements IArma{
     private boolean pjlaser;
 
+    public boolean isPjlaser() {
+        return pjlaser;
+    }
+
+    public void setPjlaser(boolean pjlaser) {
+        this.pjlaser = pjlaser;
+    }
+
     public boolean ispjLaserequipped() {
         return pjlaser;
     }
@@ -10,8 +18,8 @@ public class Laser implements IArma{
         System.out.println("Disparo con el pjlaser");
     }
     
-    public Laser(boolean pjlaser){
-        this.pjlaser=pjlaser;
+    public Laser(Exobot oExobot){
+         this.pjlaser=oExobot.getPjequiparlaser();
     }
 
 }
