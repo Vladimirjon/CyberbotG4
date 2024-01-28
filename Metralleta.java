@@ -1,18 +1,18 @@
 public class Metralleta implements IArma{
-    private boolean metralleta;
+    private boolean pjmetralleta;
 
-    public boolean isMetralletaeqquiped() {
-        return metralleta;
+    public boolean ispjMetralletaeqquiped() {
+        return pjmetralleta;
     }
 
     @Override
-    public void Disaparar() {
+    public void pjDisaparar() {
         System.out.println("Disparo con la metralleta multiple de salida ");
         System.out.println("Metralleta (MK61 Vulcan) ");
     }
 
-    public Metralleta(boolean metralleta){
-        this.metralleta=metralleta;
+    public Metralleta(boolean pjmetralleta){
+        this.pjmetralleta=pjmetralleta;
     }
 
 }

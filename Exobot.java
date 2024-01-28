@@ -1,4 +1,4 @@
-public class Exobot extends IABot implements IEspanol,IIngles{
+public class Exobot extends IABOT implements IEspanol,IIngles{
     private Botas botas;
     private Reactor reactor;
     private Laser laser;
@@ -25,20 +25,20 @@ public class Exobot extends IABot implements IEspanol,IIngles{
         this.equiparlanzafuegos(false);
     }
 
-    public void equiparmetralleta(boolean equipar){
-        this.metralleta = new Metralleta(equipar);
+    public void pjequiparmetralleta(boolean pjequipar){
+        this.pjmetralleta = new Metralleta(pjequipar);
     }
     
-    public void equiparlaser(boolean equipar){
-        this.laser = new Laser(equipar);
+    public void pjequiparlaser(boolean pjequipar){
+        this.pjlaser = new Laser(pjequipar);
     }
 
-    public void equiparbazuca(boolean equipar){
-        this.bazuca = new Bazuca(equipar);
+    public void pjequiparbazuca(boolean pjequipar){
+        this.pjbazuca = new Bazuca(pjequipar);
     }
 
-    public void equiparlanzafuegos(boolean equipar){
-        this.lanzafuego = new Lanzafuegos(equipar);
+    public void pjequiparlanzafuegos(boolean pjequipar){
+        this.pjlanzafuego = new Lanzafuegos(pjequipar);
     }
     @Override
     public String pjenseniarIngles() {

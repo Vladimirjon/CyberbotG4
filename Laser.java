@@ -1,17 +1,17 @@
 public class Laser implements IArma{
-    private boolean laser;
+    private boolean pjlaser;
 
-    public boolean isLaserequipped() {
-        return laser;
+    public boolean ispjLaserequipped() {
+        return pjlaser;
     }
 
     @Override
-    public void Disaparar() {
-        System.out.println("Disparo con el laser");
+    public void pjDisaparar() {
+        System.out.println("Disparo con el pjlaser");
     }
     
-    public Laser(boolean laser){
-        this.laser=laser;
+    public Laser(boolean pjlaser){
+        this.pjlaser=pjlaser;
     }
 
 }
