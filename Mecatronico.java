@@ -15,6 +15,7 @@ public class Mecatronico {
         oMetralleta = new Metralleta(oExobot);
         oLaser = new Laser(oExobot);
         oBazuca = new Bazuca(oExobot);
+
     }
    
     public static void main(String[] args) {
@@ -25,6 +26,7 @@ public class Mecatronico {
             exobots[i] = new Exobot();
             String serieAleatoria = mecatronico.vaAsignarSerie();
             exobots[i].vaAsignarSerie(serieAleatoria);
+            
         }
 
         for (Exobot exobot : exobots) {

@@ -98,7 +98,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         return "El "+this.getExobot()+"ha aprendido español.";
     }
 
-        public void vaAsignarSerie(String VAserie) {
+    public void vaAsignarSerie(String VAserie) {
         this.VAserie = VAserie;
     }
 
