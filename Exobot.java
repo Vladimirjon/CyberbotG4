@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Exobot extends IABOT implements IEspanol,IIngles{
     private Botas pjbotas;
     private Reactor pjreactor;
