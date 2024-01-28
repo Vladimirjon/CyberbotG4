@@ -1,10 +1,10 @@
 public class Exobot extends IABOT implements IEspanol,IIngles{
-    private Botas botas;
-    private Reactor reactor;
-    private Laser laser;
-    private Metralleta metralleta;
-    private Lanzafuegos lanzafuego;
-    private Bazuca bazuca;
+    private Botas pjbotas;
+    private Reactor pjreactor;
+    private Laser pjlaser;
+    private Metralleta pjmetralleta;
+    private Lanzafuegos pjlanzafuego;
+    private Bazuca pjbazuca;
     private Exobot exobot;
 
     public Exobot getExobot() {
@@ -15,14 +15,14 @@ public class Exobot extends IABOT implements IEspanol,IIngles{
         this.exobot = exobot;
     }
 
-    public Exobot(){
-        this.exobot= new Exobot();
-        this.botas = new Botas(true);
-        this.reactor = new Reactor(true);
-        this.equiparlaser(false);
-        this.equiparbazuca(false);
-        this.equiparmetralleta(false);
-        this.equiparlanzafuegos(false);
+    public Exobot(boolean ispjBazucaequipped,boolean ispjLaserequipped,boolean ispjBotasequipped,boolean ispjReactorequipped,boolean ispjMetralletaeqquiped, boolean ispjLanzafuegoequipped){
+        this.exobot= new Exobot(ispjBazucaequipped, ispjLaserequipped, ispjBotasequipped, ispjReactorequipped, ispjMetralletaeqquiped, ispjLanzafuegoequipped);
+        this.pjbotas = new Botas(true);
+        this.pjreactor = new Reactor(true);
+        this.pjequiparlaser(false);
+        this.pjequiparbazuca(false);
+        this.pjequiparmetralleta(false);
+        this.pjequiparlanzafuegos(false);
     }
 
     public void pjequiparmetralleta(boolean pjequipar){

@@ -1,3 +1,3 @@
-public abstract class IABot {
+public abstract class IABOT {
     
 }
