@@ -16,4 +16,9 @@ public class Reactor {
     // public Reactor(boolean pjreactor){
     //     this.pjreactor = pjreactor;
     // }
+
+    public void pjVolar(){
+        System.out.println("Puedo volar mientras tenga energia");
+    
+    }
 }
