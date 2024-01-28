@@ -77,6 +77,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     private boolean pjequiparbazuca;
 
     public Exobot() {
+        
         this.VAnumero = VAcontadorExbots;
         this.tjbotas = true;
         this.tjreactor = true;
@@ -87,6 +88,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         this.pjequiparlanzafuego = !pjequiparlaser;
         this.pjequiparbazuca = !pjequiparmetralleta;
         vaAsignarCodigoSeguridad();
+        VAcontadorExbots++;
 
     }
     @Override

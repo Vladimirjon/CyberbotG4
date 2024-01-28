@@ -38,10 +38,10 @@ public class Mecatronico {
             TJomecatronico.add(new Mecatronico());
         }
 
-        for (int i = 0; i < TJomecatronico.size(); i++) {
-            System.out.println(TJomecatronico.get(i).oLanzafuegos.ispjLanzafuegoequipped());
-            // Hacer algo con exobotActual
-        }
+        // for (int i = 0; i < TJomecatronico.size(); i++) {
+        //     System.out.println(TJomecatronico.get(i).oLanzafuegos.ispjLanzafuegoequipped());
+        //     // Hacer algo con exobotActual
+        // }
         
     }
     public String vaAsignarSerie() {
