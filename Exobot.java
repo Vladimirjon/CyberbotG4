@@ -42,7 +42,7 @@ public class Exobot extends IABot implements IEspanol,IIngles{
     }
     @Override
     public String pjenseniarIngles() {
-        return "El "+this.getExobot()+"ha aprendido español.";
+        return "El "+this.getExobot()+"ha aprendido ingles.";
     }
     @Override
     public String pjensenaEspanol() {
