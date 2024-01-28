@@ -1,12 +1,12 @@
 public class Reactor {
-    private boolean reactor=true;
+    private boolean pjreactor=true;
 
-    public boolean isReactorequipped() {
-        return reactor;
+    public boolean ispjReactorequipped() {
+        return pjreactor;
     }
 
-    public Reactor(boolean reactor){
-        this.reactor = reactor;
+    public Reactor(boolean pjreactor){
+        this.pjreactor = pjreactor;
     }
 
 }

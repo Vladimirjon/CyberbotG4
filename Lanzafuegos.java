@@ -1,17 +1,17 @@
 public class Lanzafuegos implements IArma{
-    private boolean lanzafuego;
+    private boolean pjlanzafuego;
 
-    public boolean isLanzafuegoequipped() {
-        return lanzafuego;
+    public boolean ispjLanzafuegoequipped() {
+        return pjlanzafuego;
     }
 
     @Override
-    public void Disaparar() {
+    public void pjDisaparar() {
         System.out.println("Utilizando lanzafuegos");
     }
 
-    public Lanzafuegos(boolean lanzafuego){
-        this.lanzafuego = lanzafuego;
+    public Lanzafuegos(boolean pjlanzafuego){
+        this.pjlanzafuego = pjlanzafuego;
     }
 
 }
