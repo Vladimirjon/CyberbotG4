@@ -68,34 +68,15 @@ public class Exobot extends IABot implements IEspanol, IIngles {
         this.tjbotas = true;
         this.tjreactor = true;
 
-
         Random random = new Random();
         this.pjequiparlaser = random.nextBoolean();
         this.pjequiparmetralleta = random.nextBoolean();
         this.pjequiparlanzafuego = !pjequiparlaser;
         this.pjequiparbazuca = !pjequiparmetralleta;
 
-
-        // Equipar armas
-        
     }
 
 
-    // public void pjequiparmetralleta(boolean pjequipar) {
-    //     this.pjMetralleta = new Metralleta(pjequipar);
-    // }
-
-    // public void pjequiparlaser(boolean pjequipar) {
-    //     this.pjLaser = new Laser(pjequipar);
-    // }
-
-    // public void pjequiparbazuca(boolean pjequipar) {
-    //     this.pjBazuca = new Bazuca(pjequipar);
-    // }
-
-    // public void pjequiparlanzafuegos(boolean pjequipar) {
-    //     this.pjLanzafuegos = new Lanzafuegos(pjequipar);
-    // }
 
   
 }
