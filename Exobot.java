@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Exobot extends IABOT implements IEspanol, IIngles {
     private static int VAcontadorExbots = 0;
     private Botas pjbotas;
@@ -9,6 +11,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     private Exobot exobot;
     private int VAnumero;
     private String VAserie;
+    
 
     public Exobot getExobot() {
         return exobot;
@@ -28,6 +31,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         this.pjequiparbazuca(false);
         this.pjequiparmetralleta(false);
         this.pjequiparlanzafuegos(false);
+        vaAsignarCodigoSeguridad();
     }
 
     public void pjequiparmetralleta(boolean pjequipar) {
@@ -60,7 +64,19 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         this.VAserie = VAserie;
     }
 
-    public void vaMostrarInformacion() {
-        System.out.println("Exobot " + VAnumero + ": Serie " + VAserie);
+    public void vaAsignarCodigoSeguridad() {
+        String codigoSeguridad = IABOT.generarCodigoSeguridad();
+        vaAsignarCodigoSeguridad(codigoSeguridad);
     }
+
+    public String vaObtenerCodigoSeguridad() {
+        return super.VAcodigoSeguridad;
+    }
+    public void vaMostrarInformacion() {
+        System.out.println("Exobot " + VAnumero + ": Serie " + VAserie + ", Código de seguridad: " +vaObtenerCodigoSeguridad());
+    }
+
+  
+    
+    
 }
