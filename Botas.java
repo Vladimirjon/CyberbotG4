@@ -5,8 +5,16 @@ public class Botas {
         return pjbotas;
     }
 
-    public Botas(boolean pjbotas){
-        this.pjbotas=pjbotas;
+    // public Botas(boolean pjbotas){
+    //     this.pjbotas=pjbotas;
+    // }
+
+    public boolean isPjbotas() {
+        return pjbotas;
+    }
+
+    public void setPjbotas(boolean pjbotas) {
+        this.pjbotas = pjbotas;
     }
     public void pjCorrer(){
         System.out.println("Puedo correr hasta 200 km/h");
