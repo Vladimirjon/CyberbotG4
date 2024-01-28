@@ -9,4 +9,7 @@ public class Reactor {
         this.pjreactor = pjreactor;
     }
 
+    public void pjVolar(){
+        System.out.println("Volando mientras haya energia");
+    }
 }
