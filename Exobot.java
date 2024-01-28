@@ -2,6 +2,9 @@ import java.util.Random;
 
 public class Exobot extends IABOT implements IEspanol, IIngles {
     private Exobot exobot;
+    private int VAnumero;
+    private String VAserie;
+    
     public Exobot getExobot() {
         return exobot;
     }
@@ -73,6 +76,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     private boolean pjequiparbazuca;
 
     public Exobot() {
+        this.VAnumero = VAcontadorExbots;
         this.tjbotas = true;
         this.tjreactor = true;
 
@@ -81,6 +85,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         this.pjequiparmetralleta = random.nextBoolean();
         this.pjequiparlanzafuego = !pjequiparlaser;
         this.pjequiparbazuca = !pjequiparmetralleta;
+        vaAsignarCodigoSeguridad();
 
     }
     @Override
@@ -90,5 +95,21 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     @Override
     public String pjensenaEspanol() {
         return "El "+this.getExobot()+"ha aprendido español.";
+    }
+
+        public void vaAsignarSerie(String VAserie) {
+        this.VAserie = VAserie;
+    }
+
+    public void vaAsignarCodigoSeguridad() {
+        String codigoSeguridad = IABOT.generarCodigoSeguridad();
+        vaAsignarCodigoSeguridad(codigoSeguridad);
+    }
+
+    public String vaObtenerCodigoSeguridad() {
+        return super.VAcodigoSeguridad;
+    }
+    public void vaMostrarInformacion() {
+        System.out.println("Exobot " + VAnumero + ": Serie " + VAserie + ", Código de seguridad: " +vaObtenerCodigoSeguridad());
     }
 }
