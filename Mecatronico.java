@@ -21,6 +21,7 @@ public class Mecatronico {
     public static void main(String[] args) {
         Mecatronico mecatronico = new Mecatronico();
         Exobot[] exobots = new Exobot[20];
+        Soldado[] soldados = new Soldado[20];
 
         for (int i = 0; i < 20; i++) {
             exobots[i] = new Exobot();
@@ -28,7 +29,7 @@ public class Mecatronico {
             exobots[i].vaAsignarSerie(serieAleatoria);
             
         }
-
+        System.out.println("Lista de Exobots");
         for (Exobot exobot : exobots) {
             exobot.vaMostrarInformacion();
         }
@@ -42,6 +43,15 @@ public class Mecatronico {
         //     System.out.println(TJomecatronico.get(i).oLanzafuegos.ispjLanzafuegoequipped());
         //     // Hacer algo con exobotActual
         // }
+        System.out.println("\nLista de Soldados");
+        for(int i=0;i<20;i++){
+            soldados[i] = new Soldado();
+            soldados[i].agregarNombres();
+        }
+        for(int i=0;i<20;i++){
+            ArrayList<String> nombresSoldado = soldados[i].geArrayList();
+            System.out.println(nombresSoldado.get(i));
+        }
         
     }
     public String vaAsignarSerie() {
@@ -56,6 +66,7 @@ public class Mecatronico {
 
         return VAserie.toString();
     }
+    
   
 
 }

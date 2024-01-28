@@ -9,8 +9,8 @@ public class Soldado {
     }
 
     public void agregarNombres() {
-        for (int i = 1; i <= 20; i++) {
-            TJnombreSoldados.add("Wladimir " + i);
+        for(int i=0;i<20;i++){
+            TJnombreSoldados.add("Wladimir "+(i+1));
         }
     }
 
