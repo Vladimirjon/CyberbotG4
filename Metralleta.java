@@ -8,10 +8,6 @@ public class Metralleta implements IArma{
         this.pjmetralleta = pjmetralleta;
     }
 
-    public boolean ispjMetralletaeqquiped() {
-        return pjmetralleta;
-    }
-
     @Override
     public void pjDisaparar() {
         System.out.println("Disparo con la metralleta multiple de salida ");

@@ -1,10 +1,6 @@
 public class Laser implements IArma{
     private boolean pjlaser;
 
-    public boolean ispjLaserequipped() {
-        return pjlaser;
-    }
-
     public void setPjlaser(boolean pjlaser) {
         this.pjlaser = pjlaser;
     }
