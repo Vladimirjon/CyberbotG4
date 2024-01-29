@@ -5,7 +5,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     private Exobot exobot;
     private int VAnumero;
     private String VAserie;
-    
+
     public Exobot getExobot() {
         return exobot;
     }
@@ -115,4 +115,11 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     public void vaMostrarInformacion() {
         System.out.println("Exobot " + VAnumero + ": Serie " + VAserie + ", Código de seguridad: " +vaObtenerCodigoSeguridad());
     }
+    public void pjcargarReactor(Reactor reactor){
+        if (reactor != null  && tjreactor == reactor.getPjBateria()<=30) {
+            reactor.pjcarga(50);
+            System.out.println("Exobot "+VAnumero + "cargando el reactor.");
+        }
+    }
+
 }
