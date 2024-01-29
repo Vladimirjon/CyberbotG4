@@ -9,6 +9,7 @@ public class Mecatronico {
     public Laser oLaser;
     public Bazuca oBazuca;
     public Botas pjBotas;
+    public Reactor pjReactor;
 
 
     public Mecatronico(){
@@ -18,6 +19,7 @@ public class Mecatronico {
         oLaser = new Laser(oExobot);
         oBazuca = new Bazuca(oExobot);
         pjBotas = new Botas();
+        pjReactor = new Reactor();
     }
    
     public static void main(String[] args) {
@@ -37,18 +39,8 @@ public class Mecatronico {
             TJomecatronico.add(new Mecatronico());
         }
 
-        //         Brazo izquierdo:
-        // Equipado Lanzafuego: False
-        // Equipado Laser: True
-
-        // Brazo derecho: 
-        // Equipado Metralleta: True
-        // Equipado Bazuca: False
-
-        // Piernas:
-        // Puedo saltar hasta 50m 
-        // Puedo correr a 200 km/
-
+        mecatronico.Ensamblar();
+        System.out.println();
         //IMPRIMIR DATOS DE CYBERBOT
         for (int i = 0; i < 20; i++) {
             System.out.println(" - - - CYBERBOT " + (i + 1) + " - - -");
@@ -82,5 +74,37 @@ public class Mecatronico {
         }
 
         return VAserie.toString();
+    }
+    public void Ensamblar() {
+        Exobot exobot = new Exobot();
+        System.out.println("RUSSIAN FEDERATION TOP SECRET WEAPONRY");
+        System.out.println("Preparando Exobots");
+
+        // Colores ANSI
+        String resetColor = "\u001B[0m";
+        String colorRojo = "\u001B[31m";
+        String colorVerde = "\u001B[32m";
+        String colorAzul = "\u001B[34m";
+
+        pjReactor.BarraPorciento();
+        
+        System.out.println(colorAzul + "Potenciando Brazo Derecho:" + resetColor);
+        exobot.pjpotenciaBrazoDerecha();
+        pjReactor.BarraPorciento();
+        
+        System.out.println(colorVerde + "Potenciando Brazo Izquierdo:" + resetColor);
+        exobot.pjpotenciarBrazoIzquierdo();
+        pjReactor.BarraPorciento();
+        
+        System.out.println(colorRojo + "Potenciando Piernas:" + resetColor);
+        exobot.pjpotenciarpiernas();
+        pjReactor.BarraPorciento();
+        
+        System.out.println(colorAzul + "Cargando Reactor:" + resetColor);
+        oExobot.pjcargarReactor();
+        pjReactor.BarraPorciento();
+        
+        System.out.println(colorVerde + "Volando con Reactor cargado:" + resetColor);
+        pjReactor.pjVolar();
     }
 }

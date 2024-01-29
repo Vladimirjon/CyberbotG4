@@ -133,5 +133,7 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         "\nSerie: " + this.VAserie + 
         "\nCódigo de seguridad: " +vaObtenerCodigoSeguridad());
     }
-
+    public void pjcargarReactor(){
+        System.out.println("Se ha cargado el reactor");
+    }
 }
