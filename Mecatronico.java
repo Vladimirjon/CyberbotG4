@@ -39,14 +39,17 @@ public class Mecatronico {
             TJomecatronico.add(new Mecatronico());
         }
 
-        mecatronico.Ensamblar();
-        System.out.println();
+        // mecatronico.Ensamblar();
+        // System.out.println();
         //IMPRIMIR DATOS DE CYBERBOT
         for (int i = 0; i < 20; i++) {
             System.out.println(" - - - CYBERBOT " + (i + 1) + " - - -");
             System.out.println("Soldado: " + nombresSoldado.get(i+1));
             Exobot exobot = exobots[i];
             exobot.vaMostrarInformacion();
+
+            System.out.println("Enseñado ingles: "+exobot.pjenseniarIngles());
+            System.out.println("Enseñado español: "+exobot.pjensenaEspanol());
             System.out.println();
             System.out.println("Brazo derecha");
             System.out.println("Equipado Metralleta: "+ TJomecatronico.get(i).oMetralleta.ispjMetralletaeqquiped());

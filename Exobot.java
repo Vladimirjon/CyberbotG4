@@ -109,11 +109,11 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     }
     @Override
     public String pjenseniarIngles() {
-        return "El "+this.getExobot()+"ha aprendido ingles.";
+        return "El exobot ha aprendido ingles.";
     }
     @Override
     public String pjensenaEspanol() {
-        return "El "+this.getExobot()+"ha aprendido español.";
+        return "El exobot ha aprendido español.";
     }
 
     public void vaAsignarSerie(String VAserie) {
