@@ -9,12 +9,12 @@ public class Soldado {
     }
 
     public void agregarNombres() {
-        for(int i=0;i<20;i++){
-            TJnombreSoldados.add("Wladimir "+(i+1));
+        for(int i=0;i<=20;i++){
+            TJnombreSoldados.add("Wladimir "+(i));
         }
     }
 
-    public ArrayList<String> geArrayList(){
+    public ArrayList<String> getArrayList(){
         return this.TJnombreSoldados;
     }
 }

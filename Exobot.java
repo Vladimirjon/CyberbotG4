@@ -113,6 +113,9 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
         return super.VAcodigoSeguridad;
     }
     public void vaMostrarInformacion() {
-        System.out.println("Exobot " + VAnumero + ": Serie " + VAserie + ", Código de seguridad: " +vaObtenerCodigoSeguridad());
+        System.out.println("Exobot: Exobot " + VAnumero + 
+        "\nSerie: " + this.VAserie + 
+        "\nCódigo de seguridad: " +vaObtenerCodigoSeguridad());
     }
+
 }

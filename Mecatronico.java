@@ -43,15 +43,7 @@ public class Mecatronico {
         //     System.out.println(TJomecatronico.get(i).oLanzafuegos.ispjLanzafuegoequipped());
         //     // Hacer algo con exobotActual
         // }
-        System.out.println("\nLista de Soldados");
-        for(int i=0;i<20;i++){
-            soldados[i] = new Soldado();
-            soldados[i].agregarNombres();
-        }
-        for(int i=0;i<20;i++){
-            ArrayList<String> nombresSoldado = soldados[i].geArrayList();
-            System.out.println(nombresSoldado.get(i));
-        }
+
         
     }
     public String vaAsignarSerie() {
