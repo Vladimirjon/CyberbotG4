@@ -39,8 +39,8 @@ public class Mecatronico {
             TJomecatronico.add(new Mecatronico());
         }
 
-        // mecatronico.Ensamblar();
-        // System.out.println();
+        mecatronico.Ensamblar();
+        System.out.println();
         //IMPRIMIR DATOS DE CYBERBOT
         for (int i = 0; i < 20; i++) {
             System.out.println(" - - - CYBERBOT " + (i + 1) + " - - -");
