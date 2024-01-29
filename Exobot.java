@@ -5,6 +5,22 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     private Exobot exobot;
     private int VAnumero;
     private String VAserie;
+
+    @Override
+    public void pjpotenciarpiernas(){
+        System.out.println("Se han potencializado las piernas");
+    }
+
+    @Override
+    public void pjpotenciarBrazoIzquierdo(){
+        System.out.println("Se ha potencializado el brazo Izquierdo");
+    }
+
+    @Override
+    public void pjpotenciaBrazoDerecha(){
+        System.out.println("Se ha potencializado el brazo Derecho");
+
+    }
     
     public Exobot getExobot() {
         return exobot;

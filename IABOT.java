@@ -15,6 +15,16 @@ public abstract class IABOT {
 
         return codigo.toString();
     }
+    public void pjpotenciarpiernas(){
+
+    }
+    public void pjpotenciarBrazoIzquierdo(){
+
+    }
+    public void pjpotenciaBrazoDerecha(){
+
+    }
+
 
     public void vaAsignarCodigoSeguridad(String codigoSeguridad) {
         this.VAcodigoSeguridad = codigoSeguridad;

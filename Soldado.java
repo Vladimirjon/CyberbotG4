@@ -14,6 +14,10 @@ public class Soldado {
         }
     }
 
+    public void Usar(){
+        
+    }
+
     public ArrayList<String> getArrayList(){
         return this.TJnombreSoldados;
     }
