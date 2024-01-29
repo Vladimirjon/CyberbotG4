@@ -17,7 +17,6 @@ public class Mecatronico {
         oBazuca = new Bazuca(oExobot);
 
     }
-   
     public static void main(String[] args) {
         Mecatronico mecatronico = new Mecatronico();
         Exobot[] exobots = new Exobot[20];
@@ -67,6 +66,5 @@ public class Mecatronico {
         return VAserie.toString();
     }
     
-  
 
 }
