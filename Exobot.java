@@ -6,6 +6,9 @@ public class Exobot extends IABOT implements IEspanol, IIngles {
     private int VAnumero;
     private String VAserie;
 
+    
+
+
     @Override
     public void pjpotenciarpiernas(){
         System.out.println("Se han potencializado las piernas");
