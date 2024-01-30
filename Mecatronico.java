@@ -11,7 +11,6 @@ public class Mecatronico {
     public Botas pjBotas;
     public Reactor pjReactor;
 
-
     public Mecatronico(){
         oExobot = new Exobot();
         oLanzafuegos = new Lanzafuegos(oExobot);
@@ -79,7 +78,8 @@ public class Mecatronico {
         return VAserie.toString();
     }
     public void Ensamblar() {
-        Exobot exobot = new Exobot();
+
+        Soldado osoldado = new Soldado();
         System.out.println("RUSSIAN FEDERATION TOP SECRET WEAPONRY");
         System.out.println("Preparando Exobots");
 
@@ -92,15 +92,15 @@ public class Mecatronico {
         pjReactor.BarraPorciento();
         
         System.out.println(colorAzul + "Potenciando Brazo Derecho:" + resetColor);
-        exobot.pjpotenciaBrazoDerecha();
+        System.out.println(osoldado.tjBrazoDerecha());
         pjReactor.BarraPorciento();
         
         System.out.println(colorVerde + "Potenciando Brazo Izquierdo:" + resetColor);
-        exobot.pjpotenciarBrazoIzquierdo();
+        System.out.println(osoldado.tjBrazoIzquierdo());
         pjReactor.BarraPorciento();
         
         System.out.println(colorRojo + "Potenciando Piernas:" + resetColor);
-        exobot.pjpotenciarpiernas();
+        System.out.println(osoldado.tjpiernas());
         pjReactor.BarraPorciento();
         
         System.out.println(colorAzul + "Cargando Reactor:" + resetColor);

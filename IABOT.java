@@ -2,6 +2,7 @@ import java.util.Random;
 
 public abstract class IABOT {
    protected String VAcodigoSeguridad;
+   
 
     public static String generarCodigoSeguridad() {
         StringBuilder codigo = new StringBuilder();
