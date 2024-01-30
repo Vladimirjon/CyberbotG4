@@ -1,20 +1,20 @@
 <mxfile host="65bd71144e">
     <diagram id="wvqEIDX341KBrkV__ar-" name="Page-1">
-        <mxGraphModel dx="1050" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1860" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Exobot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="438" y="650" width="710" height="460" as="geometry"/>
+                    <mxGeometry x="438" y="650" width="652" height="460" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="-VAcontadorExbots : int = 0&#10;-VAnumero : int&#10;-VAserie : String&#10;-tjreactor : boolean&#10;-tjbotas : boolean&#10;-pjequiparlaser : boolean&#10;-pjequiparmetralleta : boolean&#10;-pjequiparlanzafuego : boolean&#10;-pjequiparbazuca : boolean&#10;-exobot : Exobot&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
-                    <mxGeometry y="26" width="710" height="174" as="geometry"/>
+                    <mxGeometry y="26" width="652" height="174" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="2" vertex="1">
-                    <mxGeometry y="200" width="710" height="8" as="geometry"/>
+                    <mxGeometry y="200" width="652" height="8" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="&#10;+getTjreactor() : boolean&#10;+getPjequiparlaser() : boolean&#10;+getPjequiparmetralleta() : boolean&#10;+getPjequiparlanzafuego() : boolean&#10;+getPjequiparbazuca() : boolean&#10;+Exobot()&#10;+pjenseniarIngles() : String&#10;+pjensenaEspanol() : String&#10;\+vaAsignarSerie(VAserie : String) : void&#10;+vaAsignarCodigoSeguridad() : void&#10;+vaObtenerCodigoSeguridad() : String&#10;+vaMostrarInformacion() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
-                    <mxGeometry y="208" width="710" height="252" as="geometry"/>
+                    <mxGeometry y="208" width="652" height="252" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="Bazuca" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="110" y="650" width="230" height="120" as="geometry"/>
@@ -65,7 +65,7 @@
                     <mxGeometry y="60" width="240" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="&lt;&lt;Abastract&gt;&gt;&#10;IABOT" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="1390" y="830" width="340" height="214" as="geometry"/>
+                    <mxGeometry x="1275" y="773" width="340" height="214" as="geometry"/>
                 </mxCell>
                 <mxCell id="28" value="#VAcodigoSeguridad : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="27" vertex="1">
                     <mxGeometry y="50" width="340" height="26" as="geometry"/>
@@ -95,7 +95,7 @@
                     <mxGeometry y="60" width="210" height="66" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="Botas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="420" y="1210" width="200" height="156" as="geometry"/>
+                    <mxGeometry x="420" y="1190" width="200" height="156" as="geometry"/>
                 </mxCell>
                 <mxCell id="44" value="-pjbotas : boolean = true" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="43" vertex="1">
                     <mxGeometry y="26" width="200" height="26" as="geometry"/>
@@ -107,7 +107,7 @@
                     <mxGeometry y="60" width="200" height="96" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="Reactor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="670" y="1200" width="210" height="116" as="geometry"/>
+                    <mxGeometry x="640" y="1198" width="210" height="116" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" value="-pjreactor : boolean = true" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="47" vertex="1">
                     <mxGeometry y="26" width="210" height="26" as="geometry"/>
@@ -131,7 +131,7 @@
                     <mxGeometry y="60" width="210" height="56" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" value="Mecatronico" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="680" y="1592" width="200" height="222" as="geometry"/>
+                    <mxGeometry x="1100" y="457" width="200" height="222" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="-VAcontadorExobots : int = 0&#10;+oExobot : Exobot&#10;+oLanzafuegos : Lanzafuegos&#10;+oMetralleta : Metralleta&#10;+oLaser : Laser&#10;+oBazuca : Bazuca&#10;+pjBotas : Botas" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="55" vertex="1">
                     <mxGeometry y="26" width="200" height="132" as="geometry"/>
@@ -143,7 +143,7 @@
                     <mxGeometry y="166" width="200" height="56" as="geometry"/>
                 </mxCell>
                 <mxCell id="63" value="Soldado" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="920" y="1592" width="280" height="232" as="geometry"/>
+                    <mxGeometry x="1340" y="452" width="280" height="232" as="geometry"/>
                 </mxCell>
                 <mxCell id="64" value="-TJnombreSoldados : java.util.ArrayList&lt;String&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="63" vertex="1">
                     <mxGeometry y="26" width="280" height="42" as="geometry"/>
@@ -154,7 +154,7 @@
                 <mxCell id="66" value="+Soldado()&#10;+agregarNombres() : void&#10;+Usar() : void&#10;+getArrayList() : java.util.ArrayList&lt;String&gt;&#10;+tjpiernas():String&#10;+tjBrazoIzquierda():String&#10;+tjBrazoDerecho():String+tjpiernas():String&#10;+tjBrazoIzquierda():String&#10;+tjBrazoDerecho():String&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="63" vertex="1">
                     <mxGeometry y="76" width="280" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" parent="1" edge="1">
+                <mxCell id="67" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.003;entryY=0.308;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.001;exitY=0.157;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="30" source="5">
                     <mxGeometry x="-0.125" y="-143" width="160" relative="1" as="geometry">
                         <mxPoint x="1150" y="897.17" as="sourcePoint"/>
                         <mxPoint x="1390" y="897" as="targetPoint"/>
